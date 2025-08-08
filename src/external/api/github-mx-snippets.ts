@@ -3,7 +3,7 @@ import { octokit } from './octokit'
 export namespace GitHubSnippetRepo {
   export async function fetchRepo() {
     const repo = await octokit.rest.repos.get({
-      owner: 'mx-space',
+      owner: 'rowania',
       repo: 'snippets',
     })
     return repo.data
@@ -11,7 +11,7 @@ export namespace GitHubSnippetRepo {
 
   export async function fetchFileTree(path = '') {
     const tree = await octokit.rest.repos.getContent({
-      owner: 'mx-space',
+      owner: 'rowania',
       repo: 'snippets',
       path,
     })
@@ -21,7 +21,7 @@ export namespace GitHubSnippetRepo {
 
   export async function searchFile(path = '') {
     const tree = await octokit.rest.search.code({
-      q: `repo:mx-space/snippets in:path ${path}`,
+      q: `repo:rowania/snippets in:path ${path}`,
       sort: 'indexed',
       order: 'desc',
     })
