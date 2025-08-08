@@ -1,6 +1,15 @@
 export const socialKeyMap = {
   GitHub: 'github',
+  Twitter: 'twitter',
+  'X (Twitter)': 'x',
   Weibo: 'weibo',
   网易云: 'netease',
   哔哩哔哩: 'bilibili',
+  微信: 'wechat',
+  QQ: 'qq',
+  Telegram: 'telegram',
+  邮箱: 'mail',
+  Discord: 'discord',
+  Bluesky: 'bluesky',
+  Steam: 'steam',
 }
